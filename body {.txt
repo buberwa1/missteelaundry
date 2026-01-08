@@ -1,0 +1,124 @@
+body {
+    margin: 0;
+    font-family: "Inter", sans-serif;
+    background: #ffffff;
+    color: #0F1E3D;
+    overflow-x: hidden;
+}
+
+/* NAVIGATION */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 20px 60px;
+    display: flex;
+    justify-content: space-between;
+    background: rgba(255,255,255,0.65);
+    backdrop-filter: blur(14px);
+    z-index: 1000;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+nav a {
+    margin-left: 25px;
+    text-decoration: none;
+    color: #0F1E3D;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+/* HERO SECTION */
+.hero {
+    height: 100vh;
+    padding: 0 12%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(120deg, #E3F1FF, #F0FCF7);
+}
+.hero-text h1 {
+    font-size: 70px;
+    font-weight: 900;
+    margin: 0;
+    line-height: 1.1;
+}
+.hero-text p {
+    margin: 20px 0 40px;
+    font-size: 20px;
+    width: 75%;
+    line-height: 1.6;
+}
+.cta button {
+    padding: 14px 28px;
+    margin-right: 15px;
+    border: none;
+    border-radius: 12px;
+    font-size: 17px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: .3s;
+}
+.btn-primary {
+    background: #0F1E3D;
+    color: white;
+}
+.btn-primary:hover {
+    opacity: .8;
+}
+.btn-outline {
+    background: white;
+    border: 2px solid #0F1E3D;
+    color: #0F1E3D;
+}
+.btn-outline:hover {
+    background: #0F1E3D;
+    color: #fff;
+}
+
+/* HERO ANIMATION AREA */
+.hero-animation {
+    width: 45%;
+    height: 480px;
+}
+
+/* FLOATING BUTTONS */
+.floating {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 1000;
+}
+.floating a {
+    background: #0F1E3D;
+    color: white;
+    padding: 14px 22px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.25);
+}
+
+/* RESPONSIVE */
+@media (max-width: 950px) {
+    nav { padding: 20px 30px; }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-text h1 {
+        font-size: 45px;
+    }
+    .hero-text p {
+        width: 100%;
+    }
+    .hero-animation {
+        width: 100%;
+        height: 340px;
+        margin-top: 30px;
+    }
+}

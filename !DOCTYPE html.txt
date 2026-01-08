@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MISS TEE LAUNDRY SERVICE — Home</title>
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800;900&display=swap" rel="stylesheet">
+
+<!-- External CSS -->
+<link rel="stylesheet" href="style.css">
+
+<!-- GSAP -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+<!-- Lottie -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.10.2/lottie.min.js"></script>
+
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+<nav>
+    <strong class="logo">MISS TEE LAUNDRY</strong>
+    <div>
+        <a href="#">Home</a>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </div>
+</nav>
+
+<!-- HERO SECTION -->
+<section class="hero">
+    <div class="hero-text">
+        <h1>Premium Laundry,<br>Delivered Fresh 24/7.</h1>
+        <p>Miss Tee Laundry Service — a 5.0★ Google-rated laundry company offering Laundry, Dry Cleaning, Ironing, and Pickup & Delivery across Dar es Salaam.</p>
+
+        <div class="cta">
+            <button class="btn-primary">Book Pickup</button>
+            <button class="btn-outline">Call 0616 209 464</button>
+        </div>
+    </div>
+
+    <div class="hero-animation" id="laundry-lottie"></div>
+</section>
+
+<!-- FLOATING BUTTONS -->
+<div class="floating">
+    <a href="tel:0616209464">📞 Call</a>
+    <a href="#">💬 WhatsApp</a>
+    <a href="#">🧺 Order Pickup</a>
+</div>
+
+<!-- External JS -->
+<script src="script.js"></script>
+
+</body>
+</html>
